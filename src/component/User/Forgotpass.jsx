@@ -8,7 +8,7 @@ function Forgotpass() {
     const handelreset = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post('http://localhost:5000/user-forgot', {email})
+            const response = await axios.post('https://dream-car-backend.vercel.app/user-forgot', {email})
             console.log(response);
         } catch (error) {
             console.log('error in reset password', error);

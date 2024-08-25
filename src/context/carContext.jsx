@@ -37,7 +37,7 @@ export function Carprovider({ children }) {
 
     const fetchCarData = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/get-cardata')
+            const response = await axios.get('https://dream-car-backend.vercel.app/get-cardata')
             // console.log(response.data.product);
             setcarList(response.data.cardata)
         } catch (error) {

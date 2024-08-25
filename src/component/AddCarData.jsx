@@ -34,7 +34,7 @@ function AddCarData() {
 
         if (token) {
             try {
-                const response = await axios.post('http://localhost:5000/upload-cardata', formData, {
+                const response = await axios.post('https://dream-car-backend.vercel.app/upload-cardata', formData, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

@@ -22,7 +22,7 @@ function Signup() {
   const handelSignup = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:5000/user-signup', userdetails)
+      const response = await axios.post('https://dream-car-backend.vercel.app/user-signup', userdetails)
       // localdata(response.data.token, response.data.role)
       setmessage(response.data.message)
     } catch (error) {

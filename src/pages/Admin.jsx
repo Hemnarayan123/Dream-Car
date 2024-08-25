@@ -24,7 +24,7 @@ function Admin() {
   const deletecar = async (id) => {
     if (token) {
       try {
-        const response = await axios.delete(`http://localhost:5000/delete-cardata/${id}`, {
+        const response = await axios.delete(`https://dream-car-backend.vercel.app/delete-cardata/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

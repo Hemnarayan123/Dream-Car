@@ -22,7 +22,7 @@ function Resetpass() {
 
     const handlepassword = async () => {
         try {
-            const response = await axios.post(`http://localhost:5000/reset-password/${token}`, {password, confirmpass})
+            const response = await axios.post(`https://dream-car-backend.vercel.app/reset-password/${token}`, {password, confirmpass})
             console.log(response);
             navigate('/login')
         } catch (error) {

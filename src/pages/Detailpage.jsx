@@ -71,7 +71,7 @@ function Detailpage() {
         if (token) {
             setContact({ ...contact, carname: singlecar.title })
             try {
-                const response = await axios.post('http://localhost:5000/contact-dealer', contact, {
+                const response = await axios.post('https://dream-car-backend.vercel.app/contact-dealer', contact, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
