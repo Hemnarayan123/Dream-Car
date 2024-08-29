@@ -42,7 +42,7 @@ function Login() {
 
   return (
     <>
-      <div className='w-[500px] lg:w-[1280px] mx-auto translate-y-[20%] py-6 text-[#fff]'>
+      <div className='w-[500px] lg:w-[1280px] mx-auto translate-y-[20%] py-7 text-[#fff]'>
         <div className='LoginDetails mx-auto w-[450px]'>
           <div className='mb-8'>
             <h3 className='text-[36px] font-[500] tracking-wider'>Sign in to your account</h3>
