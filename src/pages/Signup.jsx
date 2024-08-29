@@ -6,7 +6,6 @@ import axios from 'axios'
 
 
 function Signup() {
-  const [message, setmessage] = useState('')
   const [userdetails, setuserdetails] = useState({
     username: '',
     email: '',
@@ -24,7 +23,6 @@ function Signup() {
     try {
       const response = await axios.post('https://dream-car-backend.vercel.app/user-signup', userdetails)
       // localdata(response.data.token, response.data.role)
-      setmessage(response.data.message)
     } catch (error) {
       console.log('error in signup', error);
     }
@@ -53,7 +51,7 @@ function Signup() {
             <p className='border-2 border-[#007cc7] rounded-[4px] px-8 py-2 mb-4 '><span className='inline-block mr-4'><FcGoogle /></span>Sign up with Google </p>
           </div>
           <p className='text-center '>Already have account? <Link to={'/login'}><span className='font-[500]'> log in</span></Link></p>
-          { message && <p className='bg-[#e67e22] p-4 text-center'>{message}</p>}
+
         </div>
       </div>
     </>

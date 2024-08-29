@@ -33,9 +33,7 @@ function Login() {
       )
 
     } catch (error) {
-      const verified = error.response.data.verified
-      if(!verified){setmessage(error.response.data.message);}
-      console.log(error);
+     
     }
   }
   return (
