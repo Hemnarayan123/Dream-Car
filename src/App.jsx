@@ -6,7 +6,6 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Admin from './pages/Admin'
 import Header from './component/Header'
-import ConfirmEmail from './component/ConfirmEmail'
 import Forgotpass from './component/User/Forgotpass'
 import Resetpass from './component/User/Resetpass'
 import AddCarData from './component/AddCarData'
@@ -25,7 +24,6 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/' element={<Home/>}/>
           <Route path='/admin' element={<ProtectedRoute Role = 'admin'><Admin/></ProtectedRoute>}/>
-          <Route path='/confirmation/:token' element={<ConfirmEmail/>}/>
           <Route path='/account/forget/password' element={<Forgotpass/>}/>
           <Route path='/reset-password/:token' element={<Resetpass/>}/>
           <Route path='/admin/add/cars' element={<ProtectedRoute Role = 'admin'><AddCarData/></ProtectedRoute>}/>
